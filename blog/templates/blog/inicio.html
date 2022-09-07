@@ -1,0 +1,157 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="container-md bg-principal">
+        <section class="welcome bg-bienvenida">
+         <div class="container-fluid">
+           <div class="row row-cols-1">
+             <div class="col">
+               <h1 class="text-white">Derecho presupuestario</h1>
+               <br>
+             </div>
+             <div class="col">
+               <h2 class="text-white">Curso orientado a oposiciones</h2>
+               <br>
+             </div>        
+           </div>
+         </div>
+        </section>
+        <section>
+         <div class="billetes">
+           <img src="static/img/billetesmesa.jpg" alt="billetes" class="img-fluid">
+         </div>
+        </section>
+        <section class="container-fluid bg-dirigido">
+          <div class="col align-items-center clearfix">
+           <div class="col d-none d-lg-block">
+             <img src="static/img/estudiar.jpg" alt="estudiar" class="col-md-5 float-md-end mb-2 ms-md-2">
+           </div>
+           <div class="col">
+             <br>
+             <h1>¿A quién está dirigido?</h1>
+             <br>
+             <p1 class="text-end lh-sm">
+             *Opositores al Cuerpo General Administrativo de la Administración del Estado, ingreso libre y promoción interna.
+             También para el Cuerpo de Gestión tanto promoción interna como ingreso libre. El curso abarca todo el contenido de Derecho Presupuestario del temario de gestión financiera de estas oposiciones.<br>
+             
+             *Cualquier estudiante que esté preparando otras oposiciones en las que se exijan conocimientos de Derecho Presupuestario (Cuerpo General Auxiliar de la Administración del Estado,
+             Escalas Técnicas o de Gestión de Organismos Autónomos, Instituciones Penitenciarias,...).<br>
+             
+             *Autodidactas o cualquier persona interesada en el Derecho Presupuestario.
+             
+             Tanto si te estás preparando por tu cuenta como si asistes a clases presenciales, dispondrás de un valioso material complementario para comprender mejor los temas de gestión financiera.<br>
+             <br>
+             </p1>
+             <p2 class="text-end lh-sm text-warning">Como complemento al curso online, se prepara el segundo ejercicio de gestión financiera de los exámenes de gestión de promoción interna. Preparación personalizada de supuestos por correo electrónico. Pide más información <a class="resaltado" href="{% url 'contacto' %}">aquí</a></p2> <br>
+             <p3 class="text-end lh-sm text-warning">Si lo que quieres es reforzar los supuestos prácticos de Gestión del Estado, se ofrecen una serie de libros en formato digital con ejercicios resueltos. Puedes verlos <a href="{% url 'material' %}" class="resaltado">aquí</a></p3>
+             <br>
+             <br>
+           </div>
+           <div class="col d-lg-none">
+             <img src="static/img/estudiar.jpg" alt="estudiar" class="img-fluid">
+           </div>
+     
+          </div>
+        </section>
+        <section class="container-fluid bg-objetivo">
+         <div class="row align-items-center">
+           <div class="col">
+             <h1 class="objetivotitulo text-center">Objetivo</h1>
+           </div>
+           <div class="col col-4 d-none d-lg-block">
+             <img src="static/img/competencias_aprobacion.png" alt="competencias" class="img-fluid">
+           </div>
+           <div class="col">
+             <p class="text-start lh-sm">Gracias a este curso de Derecho Presupuestario, serás capaz de afrontar con éxito y responder con acierto a las preguntas de exámenes tipo test y de los supuestos prácticos del temario de Gestión Financiera de cualquier convocatoria de empleo público a la Administración General del Estado.</p>
+           </div>
+         </div> 
+        </section>
+        <section class="container-fluid bg-profesor">
+         <div class="row align-items-center">
+           <div class="col">
+             <br>
+             <h1 class="text-white">¿Quién lo imparte?</h1>
+             <p class="text-white">Bartolomé Navarro</p><br>
+             <p class="text-white">Profesional de la Administración General del Estado (Ministerio de Defensa). Formación en ciencias de la Administración. Amplia experiencia docente.</p><br>
+             <div class="d-grid gap-2 mx-auto">
+               <button type="button" class="btn btn-warning btn-lg text-nowrap" name="button"><a href="https://es.linkedin.com/in/bartolome-navarro-mendez-724581182" target="_blank">Ver en Linkedin</a></button>
+             </div>
+             <br>
+           </div>
+           <div class="col d-none d-lg-block">
+             <img src="static/img/profesor.jpg" alt="profesor" class="img-fluid">
+           </div>
+         </div>
+         </section>
+         <section class="container-fluid bg-cita">
+           <figure class="text-center">
+             <blockquote class="blockquote">
+               <p class="text-white fs-6 fw-lighter">"Este curso merece más de 5 estrellas. Bartolomé lo explica todo de una manera sencilla y clara. Con unos esquemas que ayudan a visualizarlo todo a la perfección. Antes era una asignatura que no me gustaba nada y ahora hasta la disfruto. Además, el profesor se preocupa de tenerlo todo actualizado con los cambios en las leyes y de resolver las dudas. Este curso es la mejor compra que he podido hacer. ¡Ojalá sacar a cursos para todas las materias de la oposición!"</p>
+             </blockquote>
+             <figcaption class="blockquote-footer text-white">
+               V. O. <cite title="Source Title">(Alumno)</cite>
+             </figcaption>
+           </figure>
+         </section> 
+         <section class="container-fluid bg-temario">
+           <div class="row">
+             <div class="col align-self-center">
+               <h1 class="text-white">¿Qué estudiaré?</h1>
+               <p class="text-white lh-sm">Conocerás las diversas estructuras que presentan los créditos de los estados de gastos e ingresos de los Presupuestos Generales del Estado. Serás capaz de ubicar perfectamente los conceptos de la gestión financiera,
+                 dentro de la amplia y dispersa normativa presupuestaria. Dominarás y entenderás todos los conceptos y terminología relacionados con el ciclo presupuestario, desde su elaboración y aprobación hasta su ejecución, modificaciones y control.</p>
+               <br>        
+                 <div class="d-grid gap-2 mx-auto">
+                   <button type="button" class="btn btn-warning btn-lg text-nowrap" name="button"><a href="https://www.udemy.com/course/derecho-presupuestario-orientado-a-oposiciones/?couponCode=83DF864A0509ACAE0299" target="_blank">Ver temario (Cupón oferta)</a></button>
+                 </div>
+               <br>
+             </div>
+             <div class="col order-first d-none d-lg-block">
+               <a href="static/img/esquema.png"><img src="static/img/esquema.png" alt="esquema" class="img-fluid "></a>
+             </div>      
+             <div class="row d-lg-none text-center">
+               <a href="static/img/esquema.png"><img src="static/img/esquema.png" alt="esquema" class="img-fluid "></a>
+             </div>
+         </div>
+         </section>
+         <section class="container-fluid bg-objetivo">
+           <div class="row">
+             <div class="col align-self-center">
+               <br>
+               <h1 class="text-center">¿Dónde?</h1><br>
+               <p class="lh-sm">El curso se desarrolla totalmente online pero contarás con mi atención y apoyo constante. Con un único pago obtendrás una inscripción que te dará acceso permanente a los vídeos de clase, a más de 1.500 preguntas entre
+                 test y supuestos prácticos con respuestas razonadas, así como también a un chat de resolución de dudas. Además el curso estará totalmente actualizado hasta los exámenes de la próxima convocatoria</p><br>
+               <br>
+             </div>
+             <div class="container-fluid row align-self-center">
+               <div class="col col-4">
+                 <a href="static/img/aprobacion_consejo"><img src="static/img/aprobacion_consejo.png" alt="consejo" class="img-fluid"></a>
+               </div>
+               <div class="col col-4">
+                 <img id="nomostrar" src="static/img/lapices.jpg" alt="lápiz" class="img-fluid">
+               </div>
+               <div class="col col-4">
+                 <a href="static/img/creditos_extraordinarios.png"><img src="static/img/creditos_extraordinarios.png" alt="créditos" class="img-fluid"></a>
+               </div>
+             </div>
+           </div>
+         </section>
+         <section class="container-fluid bg-dirigido">
+           <div class="col">
+             <div class="col">
+               <h1 class="text-center">Requisitos</h1>
+               <p class="lh-sm">
+                 *No son necesarios conocimientos previos.<br>
+                 <br>
+                 *Disponer de un ordenador conectado a internet.<br>
+                 <br>
+                 *Tener a mano la normativa presupuestaria en formato pdf que se facilitará a lo largo del curso.<br>
+                 <br>
+               </p>
+             </div>
+             <div class="text-center">
+               <img class="rounded img-fluid col-lg-4 col-sm-8" src="static/img/requisitos.jpg" alt="requisitos">
+             </div>
+         </div>
+         </section>
+         </div>
+{% endblock %}

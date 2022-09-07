@@ -1,4 +1,5 @@
 {% extends 'blog/base.html' %}
+
 {% block content %}
 <div class="container-md bg-cita">
     <section class="welcome bg-billetes">
@@ -13,7 +14,7 @@
 			<section class="container-fluid bg-dirigido">
 				<div class="row align-items-center">
 					<div class="col d-none d-lg-block">
-						<img src="img/estudiar.jpg" alt="estudiar" class="img-fluid">
+						<img src="static/img/estudiar.jpg" alt="estudiar" class="img-fluid">
 					</div>
 					<div class="col">
 						<br>
@@ -30,13 +31,13 @@
 					</div>
 				</div>
 				<div class="col d-lg-none">
-					<img src="img/estudiar.jpg" alt="estudiar" class="img-fluid">
+					<img src="static/img/estudiar.jpg" alt="estudiar" class="img-fluid">
 				</div>
 	
       </section>    
       <section class="container-fluid bg-profesor">
 				<div class="col d-none d-lg-block">
-          <a href="img/competencias_aprobacion.png"><img class="col-md-6 float-md-end mb-2 ms-md-2" src="img/competencias_aprobacion.png" alt="aprobación"></a>
+          <a href="static/img/competencias_aprobacion.png"><img class="col-md-6 float-md-end mb-2 ms-md-2" src="static/img/competencias_aprobacion.png" alt="aprobación"></a>
         </div>
         <div class="col">
           <br>
@@ -60,7 +61,7 @@
             <br>
           </div>
           <div class="text-center d-lg-none">
-            <img class="rounded img-fluid col-lg-4 col-sm-8" src="img/competencias_aprobacion.png" alt="aprobación">
+            <img class="rounded img-fluid col-lg-4 col-sm-8" src="static/img/competencias_aprobacion.png" alt="aprobación">
           </div>
 
       </section> 
@@ -115,7 +116,7 @@
             <br>
           </div>
           <div class="text-center">
-            <img class="rounded img-fluid col-lg-4 col-sm-8" src="img/requisitos.jpg" alt="requisitos">
+            <img class="rounded img-fluid col-lg-4 col-sm-8" src="static/img/requisitos.jpg" alt="requisitos">
           </div>
           <div class="col">
             <br>
@@ -140,33 +141,33 @@
 					<br>
           <div class="row text-center">
                 <figure class="col-6">
-                  <a href="libro0.html">
+                  <a href="{% url 'material' %}">
                       <div class="">
-                          <img class="img-fluid" src="img/libro0.jpg" alt="libro1" class="img-fluid tm-img-center">
+                          <img class="img-fluid" src="static/img/libro0.jpg" alt="libro1" class="img-fluid tm-img-center">
                       </div>
                       <p class="tm-figcaption">Vinculación y transferencias de crédito</p>
                   </a>
               </figure>
               <figure class="col-6">
-                  <a href="libro1.html">
+                  <a href="{% url 'caja' %}">
                       <div class="">
-                          <img class="img-fluid" src="img/libro1.jpg" alt="libro1" class="img-fluid tm-img-center">
+                          <img class="img-fluid" src="static/img/libro1.jpg" alt="libro1" class="img-fluid tm-img-center">
                       </div>                      
                       <p class="tm-figcaption">Caja fija</p>
                   </a>
               </figure>
               <figure class="col-6">
-                  <a href="libro2.html">
+                  <a href="{% url 'pagos' %}">
                       <div class="">
-                          <img class="img-fluid" src="img/libro2.jpg" alt="libro2" class="img-fluid tm-img-center">
+                          <img class="img-fluid" src="static/img/libro2.jpg" alt="libro2" class="img-fluid tm-img-center">
                       </div>
                       <p class="tm-figcaption">Pagos a justificar</p>
                   </a>
               </figure>
 							<figure class="col-6">
-								<a href="libro3.html">
+								<a href="{% url 'presupuesto' %}">
 										<div class="">
-												<img class="img-fluid" src="img/libro3.jpg" alt="libro3" class="img-fluid tm-img-center">
+												<img class="img-fluid" src="static/img/libro3.jpg" alt="libro3" class="img-fluid tm-img-center">
 										</div>
 										<p class="tm-figcaption">Presupuesto, aprobación y estructura</p>
 								</a>
@@ -174,5 +175,4 @@
           </div>
       </section>  
       </div> 
-
 {% endblock %}

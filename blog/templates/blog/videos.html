@@ -1,0 +1,46 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="container-md bg-cita">
+    <section class="welcome bg-dirigido">
+     <div class="row text-center">
+       <div class="col">
+         <h1>Contenido</h1>
+         <h3>Vídeo resumen del temario</h2>
+       </div>
+       <div class="col embed-responsive embed-responsive-4by3">   
+         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DKVjiyq_oXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+     </div>
+    </section>
+     <section class="container-fluid bg-cita">
+       <figure class="text-center">
+         <blockquote class="blockquote">
+           <p class="text-white fs-6 fw-lighter">“Mi valoración para este curso es simplemente extraordinaria tanto el contenido directo sin paja como las explicaciones del profesor Bartolomé. Antes no entendía el tema de presupuestos y ahora voy adquiriendo unos conocimientos buenos y entendiendo conceptos que antes leía y leía en manuales pero no me enteraba de nada. Gracias Bartolomé por este curso.”</p>
+         </blockquote>
+         <figcaption class="blockquote-footer text-white">
+           C.C.S. <cite title="Source Title">(Alumna)</cite>
+         </figcaption>
+       </figure>
+     </section> 
+     <section class="container-fluid bg-objetivo">
+       <div class="">
+         <div class="col text-center">
+             <h1>Estructura orgánica</h1>
+             <h3>Aquí puedes ver un ejemplo de una sección cualquiera del curso.</h2>
+         </div>
+         <div class="col embed-responsive embed-responsive-4by3 text-center">
+           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cxfxceUqElI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+         </div>
+     </div>
+     </section>
+     <section class="container-fluid bg-billetes text-center row align-items-center">
+     <div class="col">  
+       <h1 class="masvidtitulo">Para ver más vídeos del curso visita el canal de <a href="https://cutt.ly/7fIKZTB" target="_blank">Youtube</a></h1>
+     </div>
+     <div class="col">
+       <img src="static/img/video.jpg" alt="canal" class="img-fluid">
+     </div>  
+     </section>
+     </div>
+ {% endblock %}

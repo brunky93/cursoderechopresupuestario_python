@@ -23,8 +23,8 @@
     </div>
     <nav class="navbar navbar-expand-md navbar-dark bg-principal fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="{% static 'img/logo.jpg' %}" alt="logo" class="img-fluid d-inline-block align-text-top logo">
+        <a class="navbar-brand" href="{% url 'inicio' %}">
+          <img src="static/img/logo.jpg" alt="logo" class="img-fluid d-inline-block align-text-top logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -37,41 +37,40 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="{% url 'inicio' %}">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="videos.html">Vídeos ejemplo</a>
+                <a class="nav-link" href="{% url 'videos' %}">Vídeos ejemplo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="material.html">Material didáctico</a>
+                <a class="nav-link" href="{% url 'material' %}">Material didáctico</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Preparación de supuestos prácticos
                 </a>
                 <ul class="dropdown-menu bg-info">
-                  <li><a class="dropdown-item" href="libro0.html">Vinculación y transferencias de crédito</a></li>
-                  <li><a class="dropdown-item" href="libro1.html">Caja fija</a></li>
-                  <li><a class="dropdown-item" href="libro2.html">Pagos a justificar</a></li>
-                  <li><a class="dropdown-item" href="libro3.html">Presupuesto, aprobación y estructura</a></li>
+                  <li><a class="dropdown-item" href="{% url 'vinculacion' %}">Vinculación y transferencias de crédito</a></li>
+                  <li><a class="dropdown-item" href="{% url 'caja' %}">Caja fija</a></li>
+                  <li><a class="dropdown-item" href="{% url 'pagos' %}">Pagos a justificar</a></li>
+                  <li><a class="dropdown-item" href="{% url 'presupuesto' %}">Presupuesto, aprobación y estructura</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-
+    <div class="container-md">
     {% block content %}
 
 
     {% endblock %}
-
-
-    <section class="container-fluid bg-principal fixed-bottom">  
+    </div>
+    <section class="container-fluid bg-principal">  
         <footer class="text-center">
           <div class="text-center">
             <h1 class="text-white">¡Contacta!</h1>
